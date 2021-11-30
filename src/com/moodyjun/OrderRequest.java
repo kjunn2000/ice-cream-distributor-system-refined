@@ -13,36 +13,8 @@ public class OrderRequest {
         this.totalAmount = totalAmount;
     }
 
-    public String getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
-    }
-
-    public IceCream getOrderItem() {
-        return orderItem;
-    }
-
-    public void setOrderItem(IceCream orderItem) {
-        this.orderItem = orderItem;
-    }
-
-    public Integer getItemQuantity() {
-        return itemQuantity;
-    }
-
-    public void setItemQuantity(Integer itemQuantity) {
-        this.itemQuantity = itemQuantity;
-    }
-
     public double getTotalAmount() {
         return totalAmount;
-    }
-
-    public void setTotalAmount(double totalAmount) {
-        this.totalAmount = totalAmount;
     }
 
     @Override
@@ -53,5 +25,4 @@ public class OrderRequest {
                 "Item Quantity -> " + itemQuantity + '\n' +
                 "Total Amount -> " + totalAmount + '\n';
     }
-
 }

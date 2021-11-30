@@ -1,11 +1,11 @@
 package com.moodyjun;
 
-public class BranchManagerHandler extends OrderRequestHandler {
+public class SeniorExecutiveHandler extends OrderRequestHandler {
 
     @Override
     public void handleRequest(OrderRequest or){
-        if(or.getTotalAmount() <= 50000) {
-            System.out.println("\nOrder is under RM50,000-> Approved \n" + or);
+        if(or.getTotalAmount() <= 10000) {
+            System.out.println("\nOrder is under RM10,000-> Approved \n" + or);
         }else {
             if (nextHandler == null) {
                 System.out.println("Order amount over authorization limit, " +
