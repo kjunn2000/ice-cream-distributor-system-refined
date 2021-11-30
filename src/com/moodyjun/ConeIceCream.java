@@ -2,8 +2,8 @@ package com.moodyjun;
 
 public class ConeIceCream extends IceCream{
 
-    private final String name = "Cone";
-    private final Double price = 1.00;
+    private String name = "Cone";
+    private Double price = 1.00;
 
     public ConeIceCream(IceCreamFlavour iceCreamFlavour) {
         super(iceCreamFlavour);

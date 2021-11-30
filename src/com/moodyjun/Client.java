@@ -39,6 +39,10 @@ public class Client {
         }
     }
 
+    public static void sendRequest(OrderRequest orderRequest){
+        orderRequestHandler.handleRequest(orderRequest);
+    }
+
     public static void configureRequestHandler() {
         SeniorExecutiveHandler seniorExecutiveHandler = new SeniorExecutiveHandler();
         BranchManagerHandler branchManagerHandler = new BranchManagerHandler();
@@ -65,9 +69,5 @@ public class Client {
         System.out.println(input);
         System.out.println("-----------------------------------");
         System.out.print("Enter choice (q for exit): ");
-    }
-
-    public static void sendRequest(OrderRequest orderRequest){
-        orderRequestHandler.handleRequest(orderRequest);
     }
 }
